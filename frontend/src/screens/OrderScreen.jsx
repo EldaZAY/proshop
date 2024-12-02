@@ -1,15 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import {
-  Row,
-  Col,
-  ListGroup,
-  Image,
-  Card,
-  Button,
-  Form,
-} from "react-bootstrap";
+import { useSelector } from "react-redux";
+import { Row, Col, ListGroup, Image, Card, Button } from "react-bootstrap";
 import { toast } from "react-toastify";
 import { PayPalButtons, usePayPalScriptReducer } from "@paypal/react-paypal-js";
 import Message from "../components/Message";
