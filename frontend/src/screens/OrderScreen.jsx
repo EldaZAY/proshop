@@ -85,14 +85,14 @@ const OrderScreen = () => {
       }
     });
   };
-  const onApproveTest = async (data, actions) => {
-    await payOrder({
-      orderId,
-      details: { payer: {} },
-    });
-    refetch();
-    toast.success("Payment successful");
-  };
+  // const onApproveTest = async (data, actions) => {
+  //   await payOrder({
+  //     orderId,
+  //     details: { payer: {} },
+  //   });
+  //   refetch();
+  //   toast.success("Payment successful");
+  // };
   const onError = (err) => {
     toast.error(err.message);
   };
