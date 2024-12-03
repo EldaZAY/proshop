@@ -20,7 +20,6 @@ const ProductEditScreen = () => {
   const [category, setCategory] = useState("");
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState("");
-  //   const [uploading, setUploading] = useState(false);
 
   const {
     data: product,
@@ -65,6 +64,7 @@ const ProductEditScreen = () => {
       toast.error(result.error);
     } else {
       toast.success("Product updated successfully");
+      refetch();
       navigate("/admin/productlist");
     }
   };
